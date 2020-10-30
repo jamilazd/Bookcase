@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import BookList from './components/BookList';
 import data from './models/books.json';
+import './App.css';
 
 
 const App = (props) => {
