@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
+import { BrowserRouter, Route } from 'react-router-dom'; 
+import Header from './components/Header'; 
+import Search from './components/Search'; 
 import BookList from './components/BookList';
+import About from './pages/About'; 
 import data from './models/books.json';
 import './App.css';
-//import Book from './components/Book';
 
 
 const App = (props) => {
@@ -24,11 +27,30 @@ const [books, setBooks] = useState(data);
     return 'No books found';
   }
   return (
-    <div>
-      <BookList books={books} addBook={addBook} />
-   </div>
-  );
+    <BrowserRouter>
+      <Route path="/" render={() => (
+      <> 
+        <Header />
+        <Search />
+        <BookList books={books} addBook={addBook} />
+      </>
+      )} />
+      <Route path="/bookcase" render={() => (
+        <>
+          <Header />
+          <BookList books={books} addBook={addBook} />
+        </>
+      )} />
+      <Route path="/about" render={() => (
+        <>
+          <Header />
+          <About />
+        </>
+      )} />
+    </BrowserRouter>
+  ); 
 }
 
 
 export default App;
+
