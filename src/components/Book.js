@@ -22,7 +22,7 @@ const Book = (props) => {
           <h3>{authors.length === 1 ? authors[0] : authors.join(', ') }</h3>
           <p className="price">{renderAmount()}</p>
           <p className="description">{description}</p>
-          <button onClick={() => props.addBook(title)}>Remove Book</button>
+          <button onClick={() => props.addBook(title)}>Add Book</button>
       </div>
     );    
 }
