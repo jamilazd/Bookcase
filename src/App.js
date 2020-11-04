@@ -6,8 +6,6 @@ import BookList from './components/BookList';
 import About from './pages/About'; 
 import data from './models/books.json';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
-
 
 const App = (props) => {
 
@@ -15,7 +13,8 @@ const App = (props) => {
   const [ keyword, setKeyword ] = useState('');
   
   async function findBooks(value) {
-    const results = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${value}&filter=paid-ebooks&print-type=books&projection=lite`).then(res => res.json()); 
+    const results = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${value}&filter=paid-ebooks&print-type=books&projection=lite`).then
+    (res => res.json()); 
     if(!results.error) {
       setBooks(results.items); 
     } 
@@ -32,9 +31,7 @@ const App = (props) => {
     setBooks(newBooks)
   }
 
-  
-
-
+  //function removeBook
 
   return (
     <BrowserRouter>
@@ -48,7 +45,7 @@ const App = (props) => {
       <Route exact path="/bookcase" render={() => (
         <>
           <Header />
-          <bookCase />
+          <bookCase/>
         </>
       )} />
       <Route exact path="/about" render={() => (
