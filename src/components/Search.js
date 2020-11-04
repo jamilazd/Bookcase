@@ -1,4 +1,5 @@
-import React from 'react';
+import React from 'react'; 
+import './Header.css'; 
 
 const Search = (props) => {
     const handleSubmit = (event) => {
@@ -6,15 +7,15 @@ const Search = (props) => {
         props.findBooks(props.keyword); 
     }
     return(
-        <nav class="nav justify-content-end">
-            <form class="form-inline"  onSubmit={handleSubmit}>
-              <h1>{props.keyword && 'Searching for keyword: ' + props.keyword}</h1>
-              <input class="form-control mr-sm-2 "
+        
+        <nav class="container">
+            <form class="row " onSubmit={handleSubmit}>
+              <input class="col form-control-lg"
                 type="text" 
                 value={props.keyword} 
                 onChange={(e) => {props.setKeyword(e.target.value) } } 
               />
-            <input class="form-control form-control-sm" type="submit"/>
+              <button class="btn btn-outline-secondary" type="search">Find Book</button>
            </form>
         </nav>
        
