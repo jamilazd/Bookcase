@@ -1,10 +1,9 @@
 import React from 'react'; 
 import PropTypes from 'prop-types'; 
 
-
 const Book = (props) => {
   
-  const { volumeInfo: { title, authors, description, imageLinks: { thumbnail } } } = props.book; 
+  const { id, volumeInfo: { title, authors, description, imageLinks: { thumbnail } } } = props.book; 
 
   const renderAmount = () => {
     if (props.book.saleInfo && props.book.saleInfo.listPrice && props.book.saleInfo.listPrice) {
@@ -23,6 +22,8 @@ const Book = (props) => {
           <p className="price">{renderAmount()}</p>
           <p className="description">{description}</p>
           <button onClick={() => props.addBook(title)}>Add Book</button>
+          {/* <button onClick={() => props.removeBook(id)}>Remove Book</button> */}
+          
       </div>
     );    
 }

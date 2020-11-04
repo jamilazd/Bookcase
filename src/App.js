@@ -3,11 +3,10 @@ import { BrowserRouter, Route, } from 'react-router-dom';
 import Header from './components/Header'; 
 import Search from './components/Search'; 
 import BookList from './components/BookList';
-import BookCase from './components/BookCase'; 
 import About from './pages/About'; 
 import data from './models/books.json';
 import './App.css';
-import bookCase from './components/BookCase';
+
 
 const App = (props) => {
 
@@ -16,12 +15,10 @@ const App = (props) => {
   
   async function findBooks(value) {
     const results = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${value}&filter=paid-ebooks&print-type=books&projection=lite`).then(res => res.json()); 
-    if (!results.error) {
+    if(!results.error) {
       setBooks(results.items); 
-    }
+    } 
   }
-
-
 
   function addBook(title) {
     console.log(`The Book ${title} was clicked`); 
@@ -34,9 +31,10 @@ const App = (props) => {
     setBooks(newBooks)
   }
 
-  if (books.length === 0) {
-    return 'No books found';
-  }
+  
+
+
+
   return (
     <BrowserRouter>
       <Route exact path="/" render={() => (
@@ -60,9 +58,6 @@ const App = (props) => {
       )} />
     </BrowserRouter>
   ); 
-  
 }
-
-
 export default App;
 
