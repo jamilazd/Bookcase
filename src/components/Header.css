@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Poppins:ital@300&display=swap');
+
+
+h1 {
+    font-family: 'Comic Neue', cursive; 
+    color: #ff5b2d; 
+    text-align: center; 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #07B3B0;
+} 
+
+.card-body {
+    font-family: 'Poppins'; 
+    text-align: center; 
+    border-width: 2px; 
+    border-style: solid;
+    border-color: #07B3B0; 
+    background-color: #D1E3E3;
+}
+
+.nav-link {
+    font-family: 'Comic Neue', cursive;
+    font-size: 22px; 
+    color: #000000; 
+    border-bottom: 1px solid rgb (209, 209, 209);
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.nav-link:hover {
+    color: #ff5b2d; 
+}
+
