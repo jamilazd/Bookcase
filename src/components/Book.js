@@ -1,5 +1,6 @@
 import React from 'react'; 
 import PropTypes from 'prop-types'; 
+import './Book.css'
 
 const Book = (props) => {
   
@@ -15,14 +16,14 @@ const Book = (props) => {
   
 
   return (
-      <div>
-          <img src={thumbnail} alt="book cover"/>
-          <h2>{title}</h2>
-          <h3>{authors.length === 1 ? authors[0] : authors.join(', ') }</h3>
-          <p className="price">{renderAmount()}</p>
-          <p className="description">{description}</p>
-          <button onClick={() => props.addBook(title)}>Add Book</button>
-          {/* <button onClick={() => props.removeBook(id)}>Remove Book</button> */}
+      <div class="container">
+        <img class="row" src={thumbnail} alt="book cover"/>
+        <h3 class="row">{title}</h3>
+        <h4 class="row">{renderAmount()}</h4>
+        <h4 class="row">{authors.length === 1 ? authors[0] : authors.join(', ') }</h4>
+        <p class="row">{description}</p>
+        <button class="btn btn-outline-secondary" onClick={() => props.addBook(title)}>Add Book</button>
+        {/* <button onClick={() => props.removeBook(id)}>Remove Book</button> */}
           
       </div>
     );    
