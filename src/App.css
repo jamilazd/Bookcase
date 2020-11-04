@@ -1,34 +1,9 @@
-@media only screen and (max-width: 600px) {}
-@media only screen and (min-width: 600px) {}
-@media only screen and (min-width: 768px) {}
-@media only screen and (min-width: 992px) {
-    .container {
-        width: 50%; 
-        margin: 0 auto; 
-    }
-}
-@media only screen and (min-width: 1200px) {}
 
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Poppins:wght@300&display=swap');
 
 
 body {
-    background-image:url("background.png"); 
     padding: 20px 100px 20px 100px; 
-}
-
-.header {
-    background-color: hsl(0, 0%, 98%); 
-}
-
-#mainH1 {
-    font-family: 'Comic Neue', cursive;
-    font-size: 60px; 
-    text-align: center; 
-    display: flex;
-    justify-content: center; 
-    position: relative; 
-    top: 30px; 
 }
 
 a {

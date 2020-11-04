@@ -2,17 +2,26 @@ import React from 'react';
 import { Link } from 'react-router-dom'; 
 
 const Header = () => {
-    return (
-      <header className="header">
-          <h1 id="mainH1">My Page Turners</h1>
-          <nav>
-          <Link to="/">Home&nbsp;</Link>
-          <Link to="/bookcase" className="bookLink">&nbsp;Bookcase</Link>
-          <Link to="/About">&nbsp; About</Link>
-          </nav>
-      </header>
-    ); 
+
+  return (
+    
+    <header>
+      <ul class="nav nav-tabs nav justify-content-end navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="nav-item">
+          <Link class="nav-link Home" to="/">Home</Link>
+        </nav>
+        <nav class="nav-item">
+          <Link class="nav-link" to="/bookcase">Bookcase</Link>
+        </nav>
+        <nav class="nav-item">
+          <Link class="nav-link About" to="/About">About</Link>
+        </nav>
+      </ul>
+   </header>   
+  ); 
 }
 
 
+
 export default Header; 
+

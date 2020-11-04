@@ -6,15 +6,18 @@ const Search = (props) => {
         props.findBooks(props.keyword); 
     }
     return(
-        <form onSubmit={handleSubmit}>
-            <h1>{props.keyword && 'Searching for keyword: ' + props.keyword}</h1>
-            <input 
-              type="text" 
-              value={props.keyword} 
-              onChange={(e) => {props.setKeyword(e.target.value) } } 
-            />
-            <input type="submit"/>
-        </form>
+        <nav class="nav justify-content-end">
+            <form class="form-inline"  onSubmit={handleSubmit}>
+              <h1>{props.keyword && 'Searching for keyword: ' + props.keyword}</h1>
+              <input class="form-control mr-sm-2 "
+                type="text" 
+                value={props.keyword} 
+                onChange={(e) => {props.setKeyword(e.target.value) } } 
+              />
+            <input class="form-control form-control-sm" type="submit"/>
+           </form>
+        </nav>
+       
     ); 
 }
 
