@@ -5,21 +5,6 @@ body {
     background-image: url('background.png');
 }
 
-::-webkit-scrollbar {
-    width: 15px;
-}
-  
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-  
-::-webkit-scrollbar-thumb {
-    background:#07B3B0;
-}
-  
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
 
 .container {
     background-color: #FAFAFA;
