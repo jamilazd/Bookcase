@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Poppins:ital@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
-h1 {
-    font-family:'Roboto Slab', serif;
-    color:black; 
-    text-align: center; 
-    padding-top: 15px; 
-    padding-bottom: 15px; 
 
-} 
+#brand {
+    padding-left: 450px; 
+    font-family:'Roboto Slab', serif;
+    font-size: 32px; 
+    color:#000000; 
+}
 
 .card-body {
     font-family: 'Poppins'; 
+    color: #000000; 
     text-align: center; 
     border-width: 2px; 
     border-style: solid;
