@@ -10,7 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = (props) => {
 
-  const [searchBooks, setSearchBooks] = useState(data);
+  const [searchBooks, setSearchBooks] = useState([]);
   const [ keyword, setKeyword ] = useState('');
   
   async function findBooks(value) {
@@ -36,27 +36,24 @@ const App = (props) => {
 
   return (
     <BrowserRouter>
+      <Header />
       <Route exact path="/" render={() => (
       <> 
-        <Header />
-        <SearchList books={searchBooks} addBook={addBook} />
       </>
       )} />
       <Route exact path="/bookcase" render={() => (
         <>
-          <Header />
           <bookCase/>
         </>
       )} />
       <Route exact path="/search" render={() => (
         <>
-          <Header />
+          <SearchList books={searchBooks} addBook={addBook} />
           <Search findBooks={findBooks} keyword={keyword} setKeyword={setKeyword}/>
         </>
       )} />
       <Route exact path="/about" render={() => (
         <>
-          <Header />
           <About />
         </>
       )} />
