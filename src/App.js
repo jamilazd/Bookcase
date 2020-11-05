@@ -26,7 +26,7 @@ const App = (props) => {
 
 
   function addBook(title) {
-    const addedBook = searchBooks.filter(book => {
+    const addedBook = searchBooks.find(book => {
       if (title === book.volumeInfo.title) {
         return true; 
       }
