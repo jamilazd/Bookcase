@@ -27,6 +27,10 @@
     box-shadow: 5px 10px 8px #888888;
 }
 
+.nav-item {
+    background-color:#F0F7F7; 
+}
+
 .nav-link:hover {
     color: #ff5b2d; 
 }
@@ -35,4 +39,3 @@
     width: 30; 
     height: 30; 
 }
-

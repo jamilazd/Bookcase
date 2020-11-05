@@ -10,7 +10,7 @@ const Search = (props) => {
         
         <nav class="container">
             <form class="row " onSubmit={handleSubmit}>
-              <input class="col form-control-lg"
+              <input  class="col form-control-lg"
                 type="text" 
                 value={props.keyword} 
                 onChange={(e) => {props.setKeyword(e.target.value) } } 

@@ -22,7 +22,6 @@ const Book = (props) => {
       <h4 class="row">{renderAmount()}</h4>
       <p class="row">{description}</p>
       <button class="row" class="btn btn-secondary" onClick={() => props.addBook(title)}>Add Book</button>
-      {/* <button onClick={() => props.removeBook(id)}>Remove Book</button> */}
     </div>
     
   );    
