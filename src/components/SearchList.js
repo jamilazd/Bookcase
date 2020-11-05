@@ -2,7 +2,7 @@ import React from 'react';
 import Book from './Book'; 
 
 
-const BookList = (props) => {
+const SearchList = (props) => {
   return (
     <div>
       {props.books.map(book => <Book key={book.id} book={book} addBook={props.addBook} 
@@ -12,4 +12,4 @@ const BookList = (props) => {
   ); 
 }
 
-export default BookList; 
+export default SearchList; 

@@ -3,7 +3,7 @@ import { BrowserRouter, Route, } from 'react-router-dom';
 import './App.css'; 
 import Header from './components/Header'; 
 import Search from './components/Search'; 
-import BookList from './components/BookList';
+import SearchList from './components/SearchList';
 import About from './pages/About'; 
 import data from './models/books.json';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -39,7 +39,7 @@ const App = (props) => {
       <Route exact path="/" render={() => (
       <> 
         <Header />
-        <BookList books={books} addBook={addBook} />
+        <SearchList books={books} addBook={addBook} />
       </>
       )} />
       <Route exact path="/bookcase" render={() => (
