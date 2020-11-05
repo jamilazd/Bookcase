@@ -18,7 +18,7 @@ const Book = (props) => {
   return (
       <div class="container">
         <img class="row" src={thumbnail} alt="book cover"/>
-        <h3 class="row">{title}</h3>
+        <h3 id="bookTitle" class="row">{title}</h3>
         <h4 class="row">{renderAmount()}</h4>
         <h4 class="row">{authors.length === 1 ? authors[0] : authors.join(', ') }</h4>
         <p class="row">{description}</p>
