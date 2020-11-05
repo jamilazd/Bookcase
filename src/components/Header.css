@@ -29,3 +29,8 @@ h1 {
     color: #ff5b2d; 
 }
 
+.navbar-brand {
+    width: 30; 
+    height: 30; 
+}
+
