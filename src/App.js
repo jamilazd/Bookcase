@@ -39,7 +39,6 @@ const App = (props) => {
       <Route exact path="/" render={() => (
       <> 
         <Header />
-        <Search findBooks={findBooks} keyword={keyword} setKeyword={setKeyword}/>
         <BookList books={books} addBook={addBook} />
       </>
       )} />
@@ -47,6 +46,12 @@ const App = (props) => {
         <>
           <Header />
           <bookCase/>
+        </>
+      )} />
+      <Route exact path="/search" render={() => (
+        <>
+          <Header />
+          <Search findBooks={findBooks} keyword={keyword} setKeyword={setKeyword}/>
         </>
       )} />
       <Route exact path="/about" render={() => (
