@@ -8,5 +8,6 @@ h3 {
 .about {
   font-family: 'Poppins'; 
   font-size: 20px; 
+  line-height: 1.7em;
   padding: 10px 30px 10px 15px;
 }
