@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Poppins:ital@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 h1 {
-    font-family: 'Comic Neue', cursive; 
-    color: #ff5b2d; 
+    font-family:'Roboto Slab', serif;
+    color:black; 
     text-align: center; 
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #07B3B0;
+
 } 
 
 .card-body {

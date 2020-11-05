@@ -22,7 +22,7 @@ const Book = (props) => {
         <h4 class="row">{renderAmount()}</h4>
         <h4 class="row">{authors.length === 1 ? authors[0] : authors.join(', ') }</h4>
         <p class="row">{description}</p>
-        <button class="btn btn-outline-secondary" onClick={() => props.addBook(title)}>Add Book</button>
+        <button class="btn btn-secondary" onClick={() => props.addBook(title)}>Add Book</button>
         {/* <button onClick={() => props.removeBook(id)}>Remove Book</button> */}
           
       </div>
