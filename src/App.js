@@ -23,13 +23,13 @@ const App = (props) => {
 
   function addBook(title) {
     console.log(`The Book ${title} was clicked`); 
-    const newBooks = searchBooks.filter(book => {
+    const remainingSearchBooks = searchBooks.filter(book => {
       if (title === book.volumeInfo.title) {
         return false; 
       }
       return true; 
     });
-    setSearchBooks(newBooks)
+    setSearchBooks(remainingSearchBooks)
   }
 
   //function removeBook
