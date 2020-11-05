@@ -4,8 +4,9 @@ import './About.css';
 const About = () => {
     return (
         <header class="container">
-            <h2>About Page Turners</h2>
+            <h3>About Page Turners</h3>
             <hr/>
+            <img src="./background" alt="" />
             <p class="about">
             The following application was created by Jamila Davis.
             This bookcase app displays a list of books that a user can save to a local bookcase

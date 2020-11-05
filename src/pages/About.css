@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Poppins:wght@300&display=swap');
 
+h3 {
+    padding: 10px 30px 10px 15px;
+}
+
+
 .about {
-    font-family: 'Poppins'; 
-    font-size: 20px; 
+  font-family: 'Poppins'; 
+  font-size: 20px; 
+  padding: 10px 30px 10px 15px;
 }
