@@ -38,13 +38,8 @@ const App = (props) => {
     <BrowserRouter>
       <Header />
       <Route exact path="/" render={() => (
-      <> 
-      </>
-      )} />
-      <Route exact path="/bookcase" render={() => (
-        <>
-          <bookCase/>
-        </>
+        <bookCase/>
+      
       )} />
       <Route exact path="/search" render={() => (
         <>
