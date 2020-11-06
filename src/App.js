@@ -11,9 +11,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = (props) => {
 
-  const [searchBooks, setSearchBooks] = useState([]);
+  const [searchBooks, setSearchBooks] = useState(initialBooks);
   const [ keyword, setKeyword ] = useState('');
-  const [ bookcase, setBookcase ] = useState(initialBooks)
+  const [ bookcase, setBookcase ] = useState([])
   
   async function findBooks(value) {
     const results = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${value}&filter=paid-ebooks&print-type=books&projection=lite`).then
@@ -54,8 +54,8 @@ const App = (props) => {
       )} />
       <Route exact path="/search" render={() => (
         <>
+          <Search findBooks={findBooks} keyword={keyword} setKeyword={setKeyword} />
           <SearchList books={searchBooks} addBook={addBook} />
-          <Search findBooks={findBooks} keyword={keyword} setKeyword={setKeyword}/>
         </>
       )} />
       <Route exact path="/about" render={() => (

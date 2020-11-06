@@ -12,7 +12,7 @@ const Header = () => {
       </div>
       <ul class="nav nav-tabs nav justify-content-start navbar navbar-expand-lg navbar-light bg-light">
         <nav class="nav-item">
-          <Link class="nav-link Home" to="/">Bookcase</Link>
+          <Link class="nav-link Home" to="/">Home</Link>
         </nav>
         <nav class="nav-item">
           <Link class="nav-link Search" to="/search">Search</Link>
