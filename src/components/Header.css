@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Poppins:ital@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
+.header {
+   padding-bottom: 10px; 
+}
 
 .navbar-brand {
     padding-left: 30px; 

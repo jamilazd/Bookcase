@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 h3 { 
-    
-    padding: 10px 30px 10px 15px;
-    font-family: 'Roboto Slab', serif; 
-    color: #07B3B0; 
-    -webkit-text-stroke-width: 0.3px;
-    -webkit-text-stroke-color: #000000;
+  text-align: center;
+  padding: 10px 30px 10px 15px;
+  font-family: 'Roboto Slab', serif; 
+  color: #07B3B0; 
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: #000000;
 }
 
 
@@ -15,5 +15,5 @@ h3 {
   font-family: 'Poppins'; 
   font-size: 20px; 
   line-height: 1.7em;
-  padding: 10px 30px 10px 15px;
+  padding: 20px 30px 200px 15px;
 }
