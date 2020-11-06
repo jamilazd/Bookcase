@@ -4,7 +4,7 @@ import './Book.css'
 
 const Book = (props) => {
   
-  const { id, volumeInfo: { title, authors, description, imageLinks: { thumbnail } } } = props.book; 
+  const { volumeInfo: { title, authors, description, imageLinks: { thumbnail } } } = props.book; 
 
   const renderAmount = () => {
     if (props.book.saleInfo && props.book.saleInfo.listPrice && props.book.saleInfo.listPrice) {
@@ -21,7 +21,12 @@ const Book = (props) => {
       <h3 className="row" id="bookTitle">{title} - {authors.length === 1 ? authors[0] : authors.join(', ') }</h3>
       <h4 className="row">{renderAmount()}</h4>
       <p className="row">{description}</p>
-      <button className="row" className="btn btn-secondary" onClick={() => props.addBook(title)}>Add Book</button>
+      {props.addBook && (
+        <button className="row" className="btn btn-secondary" onClick={() => props.addBook(title)}>Add Book</button>
+      )}
+      {props.removeBook && (
+        <button className="row" className="btn btn-secondary" onClick={() => props.removeBook(title)}>Remove Book</button>
+      )}
     </div>
     
   );    
