@@ -41,15 +41,23 @@ const App = (props) => {
       return true; 
     });
     setSearchBooks(remainingSearchBooks)
+    
+    function removeBook(title) {
+      console.log(`The book ${title} was clicked`);
+      const newBookcaseList = bookcase.filter(book => title !== book.volumeInfo.title); 
+      setBookcase(newBookcaseList);
+    }
+
   }
 
-  //function removeBook
+
 
   return (
     <BrowserRouter>
       <Header />
       <Route exact path="/" render={() => (
-        <Bookcase bookcase={bookcase}/>
+        <Bookcase bookcase={bookcase} removeBook={removeBook}/>
+        
       
       )} />
       <Route exact path="/search" render={() => (

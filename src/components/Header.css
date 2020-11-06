@@ -40,3 +40,7 @@
     color: #ff5b2d; 
 }
 
+#searchbox {
+    text-align: left; 
+    font-family: 'Roboto Slab', serif;
+}
