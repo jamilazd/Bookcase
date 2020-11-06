@@ -7,6 +7,7 @@ const Header = () => {
   return (
     
     <header className="header">
+      <div></div>
       <div className="card">
         <div className="card-body">Welcome to Page Turners, a world of books await!</div>
       </div>
@@ -19,9 +20,6 @@ const Header = () => {
         </nav>
         <nav className="nav-item">
           <Link className="nav-link About" to="/About">About</Link>
-        </nav>
-        <nav>
-          <div className="navbar-brand">Page Turners</div>
         </nav>
       </ul>
    </header>   
