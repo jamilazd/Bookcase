@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 .col {
@@ -5,7 +6,15 @@
     font-size: 30px;  
     line-height: 1.3em;
     text-align: center;
-    padding-top: 20px; 
-    padding-bottom: 100px; 
+    padding-top: 10px; 
+    padding-bottom: 20px; 
 
+}
+
+#bookcaseinfo {
+    font-family: 'Poppins'; 
+    font-size: 23px; 
+    line-height: 1.5em;
+    padding-bottom: 10px; 
+  
 }
