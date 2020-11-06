@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 
-#brand {
-    padding-left: 350px; 
+.navbar-brand {
+    padding-left: 30px; 
     font-family:'Roboto Slab', serif;
-    font-size: 32px; 
+    font-size: 40px; 
     color:#000000; 
 }
 
@@ -17,6 +17,8 @@
     border-style: solid;
     border-color: #07B3B0; 
     background-color: #D1E3E3;
+    width: 30; 
+    height: 30; 
 }
 
 .nav-link {
@@ -35,7 +37,3 @@
     color: #ff5b2d; 
 }
 
-.navbar-brand {
-    width: 30; 
-    height: 30; 
-}
