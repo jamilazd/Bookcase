@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Route, } from 'react-router-dom';
 import './App.css'; 
 import Header from './components/Header'; 
@@ -11,10 +11,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = (props) => {
 
-  const [searchBooks, setSearchBooks] = useState([]);
+  const [searchBooks, setSearchBooks] = useState(initialBooks);
   const [ keyword, setKeyword ] = useState('');
-  const [ bookcase, setBookcase ] = useState(initialBooks)
-  
+  const [ bookcase, setBookcase ] = useState([])
+  const [ count, setCount ] = useState(0); 
+
+
   async function findBooks(value) {
     const results = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${value}&filter=paid-ebooks&print-type=books&projection=lite`).then
     (res => res.json()); 
@@ -23,6 +25,9 @@ const App = (props) => {
     } 
   }
 
+   useEffect (() => {
+     document.title = `${count} Book(s) added to bookcase`; 
+   })
 
 
   function addBook(title) {
@@ -33,6 +38,7 @@ const App = (props) => {
       return false; 
     });
     setBookcase((existingBooks)=> [...existingBooks, addedBook])
+    setCount(count + 1); 
 
     const remainingSearchBooks = searchBooks.filter(book => {
       if (title === book.volumeInfo.title) {
@@ -43,11 +49,11 @@ const App = (props) => {
     setSearchBooks(remainingSearchBooks)
     
     //experiment with remove button 
-    function removeBook(title) {
-      console.log(`The book ${title} was clicked`);
-      const newBookcaseList = bookcase.filter(book => title !== book.volumeInfo.title); 
-      setBookcase(newBookcaseList);
-    }
+    //function removeBook(title) {
+    //  console.log(`The book ${title} was clicked`);
+    //  const newBookcaseList = bookcase.filter(book => title !== book.volumeInfo.title); 
+    //  setBookcase(newBookcaseList);
+    //}
 
   }
 
@@ -55,9 +61,9 @@ const App = (props) => {
 
   return (
     <BrowserRouter>
-      <Header />
+      <Header count={count} />
       <Route exact path="/" render={() => (
-        <Bookcase bookcase={bookcase} removeBook={removeBook}/>
+        <Bookcase bookcase={bookcase} />
         
       
       )} />
