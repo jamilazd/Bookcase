@@ -8,14 +8,14 @@ const Search = (props) => {
     }
     return(
         
-        <nav class="container">
-            <form class="row " onSubmit={handleSubmit}>
-              <input  class="col form-control-lg"
+        <nav className="container">
+            <form className="row " onSubmit={handleSubmit}>
+              <input  className="col form-control-lg"
                 type="text" 
                 value={props.keyword} 
                 onChange={(e) => {props.setKeyword(e.target.value) } } 
               />
-              <button class="btn btn-outline-secondary" type="search">Find Book</button>
+              <button className="btn btn-outline-secondary" type="search">Find Book</button>
            </form>
         </nav>
        

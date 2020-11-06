@@ -16,12 +16,12 @@ const Book = (props) => {
   
 
   return (
-    <div class="container">
-      <img class="row" src={thumbnail} alt="book cover"/>
-      <h3 class="row" id="bookTitle">{title} - {authors.length === 1 ? authors[0] : authors.join(', ') }</h3>
-      <h4 class="row">{renderAmount()}</h4>
-      <p class="row">{description}</p>
-      <button class="row" class="btn btn-secondary" onClick={() => props.addBook(title)}>Add Book</button>
+    <div className="container">
+      <img className="row" src={thumbnail} alt="book cover"/>
+      <h3 className="row" id="bookTitle">{title} - {authors.length === 1 ? authors[0] : authors.join(', ') }</h3>
+      <h4 className="row">{renderAmount()}</h4>
+      <p className="row">{description}</p>
+      <button className="row" className="btn btn-secondary" onClick={() => props.addBook(title)}>Add Book</button>
     </div>
     
   );    
