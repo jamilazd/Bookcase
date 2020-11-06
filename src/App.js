@@ -11,9 +11,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = (props) => {
 
-  const [searchBooks, setSearchBooks] = useState(initialBooks);
+  const [searchBooks, setSearchBooks] = useState([]);
   const [ keyword, setKeyword ] = useState('');
-  const [ bookcase, setBookcase ] = useState([])
+  const [ bookcase, setBookcase ] = useState(initialBooks)
   
   async function findBooks(value) {
     const results = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${value}&filter=paid-ebooks&print-type=books&projection=lite`).then
@@ -42,6 +42,7 @@ const App = (props) => {
     });
     setSearchBooks(remainingSearchBooks)
     
+    //experiment with remove button 
     function removeBook(title) {
       console.log(`The book ${title} was clicked`);
       const newBookcaseList = bookcase.filter(book => title !== book.volumeInfo.title); 
