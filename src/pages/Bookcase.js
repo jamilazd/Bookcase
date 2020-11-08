@@ -14,7 +14,7 @@ const Bookcase = (props) => {
                    Search for new books to add to your bookcase, using the Search page. 
                </h4>
             </div>
-            {props.bookcase.map(book => <Book key={book.id} book={book} removeBook={props.removeBook}/>) }
+            {props.books.map(book => <Book key={book.id} book={book} removeBook={props.removeBook}/>) }
         </div>
         
     ); 

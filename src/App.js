@@ -47,23 +47,32 @@ const App = (props) => {
       return true; 
     });
     setSearchBooks(remainingSearchBooks)
-    
-    //experiment with remove button 
-    //function removeBook(title) {
-    //  console.log(`The book ${title} was clicked`);
-    //  const newBookcaseList = bookcase.filter(book => title !== book.volumeInfo.title); 
-    //  setBookcase(newBookcaseList);
-    //}
-
   }
+ 
+  function removeBook(title) {
+    const removedBook = bookcase.find(book => {
+     if(title === book.volumeInfo.title) {
+        return true;
+      }
+      return false; 
+    }); 
 
-
+    setBookcase((existingBooks) => {
+      return existingBooks.filter(book => {
+       if (book.volumeInfo.title !== removedBook.volumeInfo.title) {
+          return true; 
+        }
+        return false; 
+       }); 
+    });  
+  } 
+ 
 
   return (
     <BrowserRouter>
       <Header count={count} />
       <Route exact path="/" render={() => (
-        <Bookcase bookcase={bookcase} />
+        <Bookcase books={bookcase} removeBook={removeBook} />
         
       
       )} />
