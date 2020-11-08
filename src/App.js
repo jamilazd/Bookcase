@@ -65,6 +65,7 @@ const App = (props) => {
         return false; 
        }); 
     });  
+    setCount(count - 1); 
   } 
  
 
