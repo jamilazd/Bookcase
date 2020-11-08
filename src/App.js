@@ -26,7 +26,7 @@ const App = (props) => {
   }
 
    useEffect (() => {
-     document.title = `${count} Book(s) added to bookcase`; 
+     document.title =`Page Turners: ${count} Book(s) saved`; 
    })
 
 
