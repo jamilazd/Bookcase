@@ -11,7 +11,8 @@ const Bookcase = (props) => {
                <h3 className="col"> My Bookcase</h3>
                <h4 id="bookcaseinfo">
                    This is your bookcase. Here you can save a list of books you would like to read. 
-                   Search for new books to add to your bookcase, using the Search page. 
+                   Search for new books to add to your bookcase, using the Search page. You can remove 
+                   books from your bookcase, using the <b>'Remove Book'</b> button.
                </h4>
             </div>
             {props.books.map(book => <Book key={book.id} book={book} removeBook={props.removeBook}/>) }
