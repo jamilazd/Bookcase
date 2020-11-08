@@ -10,10 +10,10 @@ body {
 .container {
     background-color: #FAFAFA;
     font-family: 'Poppins';
-    font-size: 20px; 
+    font-size: 23px; 
     line-height: 2em; 
     color: #242424; 
-    padding: 20px 50px 15px 50px;
+    padding: 25px 40px 30px 40px;
     margin-top: 10px; 
     margin-bottom: 15px; 
     border-width: 1.9px; 
@@ -26,7 +26,7 @@ body {
 }
 
 .row {
-    padding: 10px 30px 10px 30px;
+    padding: 10px 50px 10px 50px;
 }
 
 #bookTitle {

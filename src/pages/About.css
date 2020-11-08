@@ -1,19 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
-h3 { 
-  text-align: center;
-  padding: 10px 30px 10px 15px;
-  font-family: 'Roboto Slab', serif; 
-  color: #07B3B0; 
-  -webkit-text-stroke-width: 0.3px;
-  -webkit-text-stroke-color: #000000;
-}
 
 
 .about {
   font-family: 'Poppins'; 
-  font-size: 23px; 
+  font-size: 22px; 
   line-height: 1.6em;
-  padding: 20px 30px 200px 15px;
+  padding: 10px 30px 200px 30px;
 }
