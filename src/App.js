@@ -18,7 +18,7 @@ const App = (props) => {
 
 
   async function findBooks(value) {
-    const results = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${value}&filter=paid-ebooks&print-type=books&projection=lite`).then
+    const results = await fetch(`https://www.googleapis.com/books/v1/volumes?q=intitle:${value}&filter=paid-ebooks&print-type=books&projection=lite`).then
     (res => res.json()); 
     if(!results.error) {
       setSearchBooks(results.items); 
