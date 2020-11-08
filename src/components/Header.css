@@ -12,8 +12,8 @@
     text-align: center; 
     border-width: 2px; 
     border-style: solid;
-    border-color: #07B3B0; 
-    background-color: #D1E3E3;
+    border-color: #07b3b0; 
+    background-color: #d1e3e3;
     width: 30; 
     height: 30; 
 }
@@ -27,7 +27,7 @@
 }
 
 .nav-item {
-    background-color:#F0F7F7; 
+    background-color:#f0f7f7; 
 }
 
 .nav-link:hover {
@@ -37,4 +37,19 @@
 #searchbox {
     text-align: left; 
     font-family: 'Roboto Slab', serif;
+}
+
+#searchInfo {
+    text-align: center; 
+    color:#07b3b0;
+    font-family: 'Poppins'; 
+    font-size: 20px; 
+}
+
+#navBackground{
+    background-color: #fce9e4; 
+    border-style: bold; 
+    border-width: 1.9px; 
+    border-color: #07b3b0;
+
 }

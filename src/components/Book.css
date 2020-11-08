@@ -8,7 +8,7 @@ body {
 
 
 .container {
-    background-color: #FAFAFA;
+    background-color: #fafafa;
     font-family: 'Poppins';
     font-size: 23px; 
     line-height: 2em; 
@@ -18,7 +18,7 @@ body {
     margin-bottom: 15px; 
     border-width: 1.9px; 
     border-style: solid;
-    border-color: #07B3B0; 
+    border-color: #07b3b0; 
     border-bottom: 1px solid rgb (209, 209, 209);
     box-shadow: 5px 10px 8px #888888; 
     text-align: justify;
@@ -30,7 +30,7 @@ body {
 }
 
 #bookTitle {
-    color: #07B3B0; 
+    color: #07b3b0; 
     font-family: 'Roboto Slab', serif;
     -webkit-text-stroke-width: 0.3px;
     -webkit-text-stroke-color: #000000;

@@ -8,7 +8,7 @@ const Search = (props) => {
     }
     return(
         
-        <nav className="container">
+        <nav id="navBackground" className="container">
             <form className="row " onSubmit={handleSubmit}>
               <input id="searchbox"  className="col form-control-lg"
                 type="text" 
@@ -17,6 +17,7 @@ const Search = (props) => {
               />
               <button className="btn btn-outline-secondary" type="search">Find Book</button>
            </form>
+           <p id="searchInfo">Search for books by book title, using the search function above</p>
         </nav>
        
     ); 
