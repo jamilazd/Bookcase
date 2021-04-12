@@ -2,10 +2,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 
+#aboutHead{
+  padding-top: 50px;
+  padding-bottom: 25px;
+  font-family: 'Roboto Slab', serif; 
+  font-size: 50px;
+  color: #07b3b0; 
+  text-align: center;
+}
 
-.about {
+#about {
+  padding-top: 30px; 
+  margin-left: 55px;
+  margin-right: 37px;
+  height: 10em;
   font-family: 'Poppins'; 
   font-size: 22px; 
-  line-height: 1.6em;
-  padding: 10px 30px 200px 30px;
+  line-height: 1.8em;
+  text-align: left;
+  
+}
+
+#booklady{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: auto; 
+  padding-bottom: 50px;
+  
 }
