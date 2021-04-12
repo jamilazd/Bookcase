@@ -6,7 +6,7 @@ import booklady from './booklady.jpeg';
 const About = () => {
     return (
         <div className="container">
-            <h1 id="aboutHead">Page Turners</h1>
+            <h1 id="aboutHead">About Page Turners</h1>
             <hr/>
             <p id="about">
               Adding books to your <b>Page Turners</b> bookcase is a handy way of remembering which books you want to read. 

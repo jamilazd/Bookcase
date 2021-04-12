@@ -5,6 +5,14 @@
    padding-bottom: 20px;
 }
 
+#logo{
+    width: 45px; 
+    margin-right: 10px;
+    border-width: 0.1px;
+    border-style: solid;
+    border-color: #ff5b2d;
+}
+
 .nav-item {
     font-family: 'Poppins';
     font-size: 20px; 

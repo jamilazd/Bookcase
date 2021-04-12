@@ -9,9 +9,10 @@ const Bookcase = (props) => {
         <div className="container">
             <div className="row">
                <div className="col">
-                  <h3 id="homeHeading"> My Bookcase</h3>
+                  <h1 id="homeH1">Page Turners</h1>
+                  <h2 id="homeH2"> Bookcase</h2>
                    <p id="bookcaseinfo">
-                     Find new books to add to your Bookcase, on the Search page. 
+                     Find new books to add to your <b>Bookcase</b>, using the <b>Search</b> page. 
                   </p>
                   <img id="bookpic" src={bookpic} alt="books photo" />
                </div>
