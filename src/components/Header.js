@@ -7,11 +7,10 @@ const Header = () => {
   return (
     
     <header className="header">
-      <div></div>
       <div className="card">
         <div className="card-body">Welcome to Page Turners, a world of books await!</div>
       </div>
-      <ul className="nav nav-tabs nav justify-content-start navbar navbar-expand-lg navbar-light bg-light">
+      <ul className="nav nav-tabs nav justify-content-start navbar navbar-expand-lg">
         <nav className="nav-item">
           <Link className="nav-link Home" to="/">Home</Link>
         </nav>

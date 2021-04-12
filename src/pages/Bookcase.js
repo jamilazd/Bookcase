@@ -1,19 +1,21 @@
 import React from 'react'; 
 import './BookcaseStyle.css'
 import Book from '../components/Book'; 
-
+import bookpic from './bookpic.jpeg'; 
 
 
 const Bookcase = (props) => {
     return (
         <div className="container">
             <div className="row">
-               <h3 className="col"> My Bookcase</h3>
-               <h4 id="bookcaseinfo">
-                   This is your Bookcase. Here you can save a list of books you would like to read. 
-                   You can remove books from your Bookcase, using the <b>'Remove Book'</b> button.
-                   Search for new books to add to your Bookcase, on the Search page. 
-               </h4>
+               <div className="col">
+                  <h3 id="homeHeading"> My Bookcase</h3>
+                   <p id="bookcaseinfo">
+                     Find new books to add to your Bookcase, on the Search page. 
+                  </p>
+                  <img id="bookpic" src={bookpic} alt="books photo" />
+               </div>
+               
             </div>
             {props.books.map(book => <Book key={book.id} book={book} removeBook={props.removeBook}/>) }
         </div>
