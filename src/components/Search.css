@@ -1,0 +1,40 @@
+#form{
+    padding-top: 50px;
+}
+
+#searchDiv{
+    background-color: #D6EAEA;
+}
+
+#searchbox {
+    font-family: 'Roboto Slab', serif;
+    color: #07b3b0; 
+    text-align: left; 
+    border-style: solid;
+    border-radius: 1%;
+    border-width: 2px; 
+    border-color: #07b3b0;  
+}
+
+#searchInfo {
+    margin: auto; 
+}
+
+#searchButton{
+    margin-left: 10px;
+    font-family: 'Poppins';
+    font-size: 20px; 
+    color: #000000;
+    background-color: #ffffff;
+    border-style: solid;
+    border-radius: 5%;
+    border-width: 1.5px; 
+    border-color: #07b3b0;  
+    border-bottom: 1px solid rgb (209, 209, 209);
+    box-shadow: 2px 4px 5px #888888;
+}
+
+#searchButton:hover {
+    color: #ff5b2d; 
+    font-weight: bold;
+}
