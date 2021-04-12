@@ -1,3 +1,21 @@
+.container {
+    width: 50em;
+    padding-top: 40px; 
+    padding-bottom: 30px;
+    background-color: #fafafa;
+    font-family: 'Poppins';
+    text-align: justify;
+    font-size: 16px; 
+    line-height: 2em; 
+    color: #000000;
+    border-width: 1px; 
+    border-style: solid;
+    border-color: #07b3b0; 
+    border-bottom: 1px solid rgb (209, 209, 209);
+    box-shadow: 5px 10px 8px #888888; 
+}
+
+
 #homeHeading {
     padding-top: 40px;
     font-family: 'Roboto Slab', serif; 

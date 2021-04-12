@@ -4,29 +4,47 @@ body {
 }
 
 
-.container {
-    background-color: #fafafa;
+#bookDiv {
+    padding-top: 40px; 
     padding-bottom: 30px;
+    background-color: #fafafa;
     font-family: 'Poppins';
-    font-size: 23px; 
-    line-height: 2em; 
     text-align: justify;
     font-size: 16px; 
-    color: #242424;
+    line-height: 2em; 
+    color: #000000;
     border-width: 1px; 
     border-style: solid;
     border-color: #07b3b0; 
-    border-bottom: 1px solid rgb (209, 209, 209);
-    box-shadow: 5px 10px 8px #888888; 
 }
 
 .row {
     padding: 10px 50px 10px 50px;
 }
 
+
 #bookTitle {
+    padding-top: 20px;
     color: #07b3b0; 
     font-family: 'Roboto Slab', serif;
     -webkit-text-stroke-width: 0.3px;
     -webkit-text-stroke-color: #000000;
+}
+
+#bookButton{
+    font-family: 'Poppins';
+    font-size: 20px;
+    color:#000000; 
+    background-color:#f0f7f7;
+    border-style: solid;
+    border-radius: 5%;
+    border-width: 1.5px; 
+    border-color: #07b3b0;  
+    border-bottom: 1px solid rgb (209, 209, 209);
+    box-shadow: 5px 10px 8px #888888;
+}
+
+#bookButton:hover {
+    color: #ff5b2d; 
+    font-weight: bold;
 }

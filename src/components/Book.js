@@ -16,19 +16,22 @@ const Book = (props) => {
   
 
   return (
-    <div className="container">
-      <img className="row" src={thumbnail} alt="book cover"/>
-      <h3 className="row" id="bookTitle">{title} - {authors.length === 1 ? authors[0] : authors.join(', ') }</h3>
-      <h4 className="row">{renderAmount()}</h4>
-      <p className="row">{description}</p>
-      {props.addBook && (
-        <button className="row" className="btn btn-secondary" onClick={() => props.addBook(title)}>Add Book</button>
-      )}
-      {props.removeBook && (
-        <button className="row" className="btn btn-secondary" onClick={() => props.removeBook(title)}>Remove Book</button>
-      )}
+    <div id="bookDiv">
+      <div className="row">
+       <div className="col">
+         <img  src={thumbnail} alt="book cover"/>
+         <h3  id="bookTitle">{title} - {authors.length === 1 ? authors[0] : authors.join(', ') }</h3>
+         <h4>{renderAmount()}</h4>
+         <p>{description}</p>
+        {props.addBook && (
+          <button id="bookButton" className="btn btn-secondary" onClick={() => props.addBook(title)}>Add Book</button>
+        )}
+        {props.removeBook && (
+          <button id="bookButton" className="btn btn-secondary" onClick={() => props.removeBook(title)}>Remove Book</button>
+        )}
+       </div>
+      </div>
     </div>
-    
   );    
 }
 
