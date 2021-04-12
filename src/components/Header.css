@@ -1,38 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Poppins:ital@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
-.header {
-   padding-bottom: 10px; 
+#nav{
+   padding-bottom: 20px;
 }
 
-
-.card-body {
-    font-family: 'Poppins'; 
-    color: #000000; 
-    text-align: center; 
-    border-width: 2px; 
-    border-style: solid;
-    border-color: #07b3b0; 
-    background-color: #d1e3e3;
-    width: 30; 
-    height: 30; 
-}
-
-.nav-link {
+.nav-item {
     font-family: 'Poppins';
-    font-size: 22px; 
-    color: #000000; 
+    font-size: 20px; 
+    background-color:#f0f7f7;
+    border-style: solid;
+    border-radius: 5%;
+    border-width: 1.5px; 
+    border-color: #07b3b0;  
     border-bottom: 1px solid rgb (209, 209, 209);
     box-shadow: 5px 10px 8px #888888;
 }
 
-.nav-item {
-    background-color:#f0f7f7; 
+.nav-link{
+    color: #000000; 
 }
 
 .nav-link:hover {
     color: #ff5b2d; 
+    font-weight: bold;
 }
+
+
+
+
 
 #searchbox {
     text-align: left; 
@@ -44,12 +40,4 @@
     color:#07b3b0;
     font-family: 'Poppins'; 
     font-size: 20px; 
-}
-
-#navBackground{
-    background-color: #fce9e4; 
-    border-style: bold; 
-    border-width: 1.9px; 
-    border-color: #07b3b0;
-
 }
