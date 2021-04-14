@@ -10,6 +10,7 @@ const Bookcase = (props) => {
             <div className="row">
                <div className="col">
                   <h1 id="homeH1">Page Turners</h1>
+                  <hr/>
                   <h2 id="homeH2"> Bookcase</h2>
                    <p id="bookcaseinfo">
                      Find new books to add to your <b>Bookcase</b>, using the <b>Search</b> page. 
